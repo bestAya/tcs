@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <style>
+        .sace{
+            width:600px;
+            height:600px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-top: -300px;
+            margin-left: -300px;
+            /*background: #93d0dd;*/
+            background:url("3.jpg") no-repeat center/cover;
+        }
+        .block{
+            width:29px;
+            height: 29px;
+            float: left;
+        }
+        .hot{
+            background:url("1.png") no-repeat center/cover;
+            border-radius: 50%;
+        }
+        .fot{
+            background: red;
+            border-radius:50% ;
+        }
+
+    </style>
+</head>
+<body>
+     <div class="sace"></div>
+</body>
+<script src="snake.js"></script>
+<script>
+    let sake=new snake();
+    sake.start();
+</script>
+</html>
